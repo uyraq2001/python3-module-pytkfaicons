@@ -1,0 +1,4 @@
+spec: .gear/python3-module-pytkfaicons.spec
+tar: .
+copy: .gear/pyproject_deps.json
+copy: *.patch

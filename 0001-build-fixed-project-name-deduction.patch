@@ -1,0 +1,27 @@
+From b6bf9c94fd9f3dcc6128845d64ea1083151cd2ee Mon Sep 17 00:00:00 2001
+From: Kozyrev Yuri <kozyrevid@basealt.ru>
+Date: Fri, 31 Jan 2025 21:36:45 +0400
+Subject: [PATCH] build: fixed project name deduction
+
+---
+ setuputil.py | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/setuputil.py b/setuputil.py
+index 074fd27..ce3a34b 100644
+--- a/setuputil.py
++++ b/setuputil.py
+@@ -19,9 +19,7 @@ def find_version(fnam, version="VERSION"):
+ 
+ 
+ def find_projectname():
+-    cwd = os.getcwd()
+-    name = os.path.basename(cwd)
+-    return name
++    return "pytkfaicons"
+ 
+ 
+ def load_requirements():
+-- 
+2.50.1
+
